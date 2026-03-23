@@ -8,10 +8,7 @@ Buzzvil Ads Center UI 목업을 Claude가 자동으로 만들어주는 스킬입
 ## 사용 예시
 
 ```
-"라이브커머스 목록 화면 만들어줘"
-"정산 페이지 만들어줘"
-"선불충전 화면 만들어줘"
-"협력광고 생성 폼 만들어줘"
+요구사항을 적거나, PRD·기획 문서 그대로 붙여 넣어보세요.
 ```
 
 결과물은 `.html` 파일로 생성되며, 다운로드 후 브라우저에서 바로 열어 확인할 수 있습니다.
@@ -53,19 +50,6 @@ Buzzvil Ads Center UI 목업을 Claude가 자동으로 만들어주는 스킬입
 
 **신규 화면 생성**
 - Figma에 없는 화면도 기존 디자인 패턴을 참고해서 자동으로 만들어줍니다
-
----
-
-## GitHub Release 등록 방법 (관리자용)
-
-스킬을 업데이트하거나 처음 등록할 때:
-
-1. GitHub repo → **Releases** → **Create a new release**
-2. **Tag version** 입력 (예: `v1.0.0`)
-3. **Attach binaries** → `buzzvil-ads-center-dx.zip` 업로드
-4. **Publish release**
-
-이후 위 다운로드 버튼이 항상 최신 버전을 가리킵니다.
 
 ---
 
@@ -117,4 +101,14 @@ Mac: `Cmd+Q` → 다시 실행 / Windows: 트레이 아이콘 종료 → 다시 
 
 ---
 
-Made by Buzzvil Design Team
+## GitHub Release 등록 방법 (관리자용)
+
+스킬을 업데이트하거나 처음 등록할 때:
+
+1. GitHub repo → **Releases** → **Create a new release**
+2. **Tag version** 입력 (예: `v1.0.0`)
+3. **Attach binaries** → `buzzvil-ads-center-dx.zip` 업로드
+4. **Publish release**
+
+이후 위 다운로드 버튼이 항상 최신 버전을 가리킵니다.
+
