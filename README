@@ -1,0 +1,113 @@
+# Buzzvil Ads Center DX — Claude Skill
+
+Buzzvil Ads Center UI 목업을 Claude가 자동으로 만들어주는 스킬입니다.
+요구사항을 텍스트로 입력하면 광고센터 디자인 시스템에 맞는 인터랙티브 HTML 목업을 생성합니다.
+
+---
+
+## 사용 예시
+
+```
+"라이브커머스 목록 화면 만들어줘"
+"정산 페이지 만들어줘"
+"선불충전 화면 만들어줘"
+"협력광고 생성 폼 만들어줘"
+```
+
+결과물은 `.html` 파일로 생성되며, 다운로드 후 브라우저에서 바로 열어 확인할 수 있습니다.
+
+---
+
+## 설치 방법
+
+### 준비물
+- Claude Desktop 앱 ([다운로드](https://claude.ai/download))
+- Pro 이상의 플랜 (Skills 기능 필요)
+
+### 설치
+
+1. 이 repo에서 **`buzzvil-ads-center-dx.zip`** 다운로드
+2. Claude Desktop 앱 실행
+3. **Settings → Capabilities → Skills**
+4. `+` 버튼 → **Upload a skill** → zip 파일 선택
+5. 설치 완료
+
+이게 전부입니다. 별도 설정 없이 바로 사용할 수 있습니다.
+
+---
+
+## 사용 방법
+
+설치 후 새 대화에서 만들고 싶은 화면을 자유롭게 입력하면 됩니다.
+
+**기존 화면 재현**
+- 라이브커머스 목록, 협력광고 목록, 정산, 리포트, 카탈로그, 멤버 관리 등
+
+**신규 화면 생성**
+- Figma에 없는 화면도 기존 디자인 패턴을 참고해서 자동으로 만들어줍니다
+
+---
+
+## 파일 구조
+
+```
+buzzvil-ads-center-dx.zip
+└── buzzvil-ads-center-dx/
+    ├── SKILL.md                    # 스킬 실행 지침
+    └── references/
+        ├── screen-patterns.md      # 화면 패턴 & 실측값
+        ├── design-tokens.md        # 디자인 토큰
+        ├── components.md           # 컴포넌트 사용법
+        ├── layout-patterns.md      # 레이아웃 패턴
+        └── code-conventions.md     # 코드 컨벤션
+```
+
+---
+
+## Figma MCP 연결 (선택사항)
+
+기본 설치만으로도 충분히 사용할 수 있습니다.
+Figma MCP를 추가로 연결하면 Figma 파일을 실시간으로 읽어 더 정확한 목업을 생성할 수 있습니다.
+
+<details>
+<summary>Figma MCP 설정 방법 보기</summary>
+
+### 1. Figma Personal Access Token 발급
+1. Figma → 프로필 → Settings → Security
+2. Personal access tokens → **Generate new token**
+3. 이름 입력 (예: `claude-mcp`)
+4. Scopes 체크:
+   - ✅ `file_content:read`
+   - ✅ `file_dev_resources:read`
+   - ✅ `library_assets:read`
+5. 토큰 복사 (창 닫으면 다시 볼 수 없음)
+
+### 2. `claude_desktop_config.json` 설정
+
+**파일 위치**
+- Mac: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+
+**아래 내용 추가**
+```json
+{
+  "mcpServers": {
+    "figma": {
+      "command": "npx",
+      "args": ["-y", "figma-developer-mcp"],
+      "env": {
+        "FIGMA_API_KEY": "여기에_발급받은_토큰_붙여넣기"
+      }
+    }
+  }
+}
+```
+
+> 기존 설정이 있다면 `mcpServers` 안에 `"figma": { ... }` 블록만 추가하세요.
+
+### 3. Claude Desktop 재시작
+`Cmd+Q` (Mac) 또는 트레이 아이콘 종료 (Windows) → 다시 실행
+
+</details>
+
+---
