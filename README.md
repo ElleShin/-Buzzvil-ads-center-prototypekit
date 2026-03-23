@@ -1,7 +1,7 @@
 Buzzvil Ads Center UI 목업을 Claude가 자동으로 만들어주는 스킬입니다.
 요구사항을 텍스트로 입력하면 광고센터 디자인 시스템에 맞는 인터랙티브 HTML 목업을 생성합니다.
 
-## [⬇️ 스킬 다운로드](../../releases/latest/download/buzzvil-ads-center-dx.zip)
+## [⬇️ Skill 파일 다운로드](../../releases/latest/download/buzzvil-ads-center-dx.zip)
 
 ---
 
