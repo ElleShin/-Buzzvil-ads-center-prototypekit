@@ -1,5 +1,3 @@
-# Buzzvil Ads Center DX — Claude Skill
-
 Buzzvil Ads Center UI 목업을 Claude가 자동으로 만들어주는 스킬입니다.
 요구사항을 텍스트로 입력하면 광고센터 디자인 시스템에 맞는 인터랙티브 HTML 목업을 생성합니다.
 
@@ -28,13 +26,21 @@ Buzzvil Ads Center UI 목업을 Claude가 자동으로 만들어주는 스킬입
 
 ### 설치 순서
 
-1. 위 **스킬 다운로드** 버튼 클릭 → `buzzvil-ads-center-dx.zip` 다운로드
-2. Claude Desktop 앱 실행
-3. **Settings → Capabilities → Skills**
-4. `+` 버튼 → **Upload a skill** → zip 파일 선택
-5. 설치 완료
+➊ 위 **스킬 다운로드** 버튼 클릭 → `buzzvil-ads-center-dx.zip` 다운로드
 
-이게 전부입니다. 별도 설정 없이 바로 사용할 수 있습니다.
+
+➋ Claude Desktop 앱 실행
+
+   
+➌ **Settings → Capabilities → Skills**로 이동
+<img width="4320" height="2040" alt="경로 안내" src="https://github.com/user-attachments/assets/6a6cd72d-e41a-453b-855f-716e893b6955" />
+
+
+➍ `+` 버튼 → **Upload a skill** → zip 파일 선택
+<img width="4320" height="2040" alt="경로 안내2" src="https://github.com/user-attachments/assets/54ea3c41-0750-4021-8ef5-432c6ea9ec42" />
+
+
+➎ 설치 완료
 
 ---
 
